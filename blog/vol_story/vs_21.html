@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" type="image/x-icon" href="../../Assets/logo/logoJpg-photoaidcom-cropped.jpg">
+       <link rel="stylesheet" href="../../css/style.css">
+       <link rel="stylesheet" href="../../css/Utility.css">
+       <link rel="stylesheet" href="../blog_style.css">
+  
+       <title>vs_21</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+              crossorigin="anonymous"></script>
+        
+</head>
+
+<body id="bootstrap-override">
+       <!-- navbar start   -->
+       <!-- Image and text -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="#">
+                            <img src="../../Assets/logo/logoNpng.png" alt="ImpactHub" height="35px" width="35px">
+                            ImpactHub
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ImpactHub</h5>
+                                   <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                          <li class="nav-item">
+                                                 <a class="nav-link active logo-clr-txt" aria-current="page"
+                                                        href="../../index.html">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active open" aria-current="page"
+                                                        href="../../Volunteer.html">Volunteer</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../../ngo.html">Ngos</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page" href="../../aboutus.html">AboutUs</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../../contactus.html">ContactUs</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        LogIn/JoinUs
+                                                 </a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="../../login.php">LogIn</a></li>
+                                                        <li><a class="dropdown-item" onclick="toast()">SingUp</a> </li>
+                                                 </ul>
+                                          </li>
+                                          <li class="nav-item active">
+                                                 <a class="nav-link py-0" href="../../Donation/donation.html">
+                                                        <button type="button"
+                                                               class="btn btn-outline-primary donatebtn">Donate</button>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+       <!-- navbar end -->
+       <!-- toast start -->
+       <div id="toast-id" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body text-capitalize">
+                     <div class="d-flex justify-content-between">
+                            <h5>Hello,Who Are You ?</h5>
+                            <button onclick="toastclose()" type="button" class="btn-close" data-bs-dismiss="toast"
+                                   aria-label="Close"></button>
+                     </div>
+                     <div id="btn" class="mt-2 pt-2 border-top">
+                            <a href="../../signUp-ngo.php">
+                                   <button class="btn btn-outline-primary donatebtn">NGO</button>
+                            </a>
+                            <a href="../../signUp-vol.php">
+                                   <button class="btn btn-outline-primary donatebtn">Volunteer</button>
+                            </a>
+                     </div>
+              </div>
+       </div>
+
+
+       <div class="container" style="background-color:aliceblue">
+              <div>
+                     <h2>
+                        “ImpactHub was the first result to come up and I didn’t have to check further after that as ImpactHub had NGO requirements with all sorts of skill sets and it really made the whole process convenient for me,” says Yuvika   
+                     </h2>
+              </div>
+              <div class="date">
+                     <img src="https://www.connectfor.org/connectforstaticresources/images/DatePostedSmallIcon.svg"
+                            alt="">
+                     <p>Published on 22 July, 2021</p>
+              </div>
+              <br><br>
+              <div class="story-div">
+                     <h6>
+                            <span class="divider-left">
+                            </span><span class="story">Story</span>
+                            <Span class="divider-right"></Span>
+                     </h6>
+
+              </div>
+              <div class="story-content">
+                     <p>
+                         “ImpactHub was the first result to come up and I didn’t have to check further after that as ImpactHub had NGO requirements with all sorts of skill sets and it really made the whole process convenient for me,” says Yuvika, our young changemaker who successfully completed her volunteering journey with Ek Tara. Read on to know more about her volunteering experience - “My experience with Ektara NGO was very different from what I imagined it to be, a good difference. The NGO was very cooperative, humble, and affable, as well as the beneficiaries were absolutely obedient and dedicated. It was overall a very gratifying experience which gave me a lot to learn from. The whole process made it easier to form a personal connection with the learner in no time. I’ve volunteered before, online as well as on-ground yet again this experience was completely different in itself, we connected through WhatsApp and conveyed our messages using voice messages, videos, etc, which was so new to me, it really taught me to adjust accordingly to the circumstances. Nonetheless, the personal touch which the on ground volunteering offers wasn’t lost via this new normal. I always had a keen fondness for helping others, whether it’s my peers in studies or the needy with essentials, realising the effect a small proportion of my time would make in someone else’s life during these rickety times made me wanna contribute my share in making the whole online learning life easier for the less privileged. The power of giving is greater than keeping things to yourself. The joy and satisfaction after knowing that YOU made a difference, that you have the ability to bring a smile on someone’s face or have the strength to help them make something out of their life by doing absolutely minimal is just too precious to let go. Gratitude is something too vital and what’s a greater way to do so than by sharing your powers? Life is challenging for everybody, how about making it a little less difficult for someone else and then see how yours gets lighter too. You know what they say “Altruism is contagious“.   
+                     </p>
+
+              </div>
+              <div class="Gallery-div">
+                     <h6>
+                            <span class="divider-left">
+                            </span><span class="story">Gallery</span>
+                            <Span class="divider-right"></Span>
+                     </h6>
+
+              </div>
+              <div class="gallery-content">
+                     <img src=https://www.connectfor.org/yuvika-agarwal-storydetail.jpg class="img-thumbnail" alt="...">
+              </div>
+       </div>
+       <footer class="bg-body-tertiary text-center text-lg-start">
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                     © 2024 Copyright:
+                     <a class="text-body" href="../../index.html">ImpactHub</a>
+              </div>
+              <!-- Copyright -->
+       </footer>
+       <script src="../../script.js"></script>
+
+</body>
+
+</html>

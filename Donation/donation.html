@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="icon" type="image/x-icon" href="../Assets/logo/logoJpg-photoaidcom-cropped.jpg">
+
+       <link rel="stylesheet" href="../css/style.css">
+       <link rel="stylesheet" href="../css/Utility.css">
+       <link rel="stylesheet" href="doonation.css">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+              crossorigin="anonymous"></script>
+
+       <!-- FontAwesome Icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+       <title>ImpactHub</title>
+</head>
+
+<body class="donation" id="bootstrap-override">
+       <!-- navbar start   -->
+       <!-- Image and text -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="#">
+                            <img src="../Assets/logo/logoNpng.png" alt="ImpactHub" height="35px" width="35px">
+                            ImpactHub
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ImpactHub</h5>
+                                   <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                          <li class="nav-item">
+                                                 <a class="nav-link active logo-clr-txt" aria-current="page"
+                                                        href="../index.html">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../Volunteer.html">Volunteer</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../ngo.html">Ngos</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../aboutus.html">AboutUs</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../contactus.html">ContactUs</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        LogIn/JoinUs
+                                                 </a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="../login.php">LogIn</a></li>
+                                                        <li><a class="dropdown-item" onclick="toast()">SingUp</a> </li>
+                                                 </ul>
+                                          </li>
+                                          <li class="nav-item active">
+                                                 <a class="nav-link py-0" href="#">
+                                                        <button type="button" id="donatebtn"
+                                                               class="btn btn-outline-primary donatebtn">Donate</button>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+       <!-- navbar end -->
+       <!-- toast start -->
+       <div id="toast-id" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body text-capitalize">
+                     <div class="d-flex justify-content-between">
+                            <h5>Hello,Who Are You ?</h5>
+                            <button onclick="toastclose()" type="button" class="btn-close" data-bs-dismiss="toast"
+                                   aria-label="Close"></button>
+                     </div>
+                     <div id="btn" class="mt-2 pt-2 border-top">
+                            <a href="../signUp-ngo.php">
+                                   <button class="btn btn-outline-primary donatebtn">NGO</button>
+                            </a>
+                            <a href="../signUp-vol.php">
+                                   <button class="btn btn-outline-primary donatebtn">Volunteer</button>
+                            </a>
+                     </div>
+              </div>
+       </div>
+
+       <div class="intro">
+              <h1>donate with us</h1>
+              <p> a small step for big changes</p>
+              <!-- <a href="#form-container"><button>Donate</button></a> -->
+              <form>
+                     <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                            data-payment_button_id="pl_NxpyvbUxf4zONc" async> </script>
+              </form>
+       </div>
+
+       <!-- <div id="form-container" class="form-container">
+              <div class="cover">
+                     <div class="front">
+                            <img src="../Assets/logo/logoPng.png" alt="rudra">
+                            <div class="text">
+                                   <span class="text-1">Giving Is Not About Making A Donation<br>It's About Making An
+                                          Impact</span>
+                                   <span class="text-2">. . . Let's Make An Impact . . .</span>
+                            </div>
+                     </div>
+
+
+              </div>
+              <div class="forms">
+                     <div class="form-content">
+                            <div class="login-form">
+                                   <div class="title">Donation</div>
+                                   <form action="#">
+                                          <div class="input-boxes">
+
+                                                 <div class="input-box">
+                                                        <i class="fa-solid fa-user"></i>
+                                                        <input type="text" placeholder="Your Name" required>
+                                                 </div>
+                                                 <div class="input-box">
+                                                        <i class="fas fa-envelope"></i>
+                                                        <input type="text" placeholder="E-Mail Address" required>
+                                                 </div>
+                                                 <div class="input-box">
+                                                        <i class="fa-solid fa-phone"></i>
+                                                        <input type="tel" placeholder="Phone Number"
+                                                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                                 </div>
+                                                 <div class="input-box">
+                                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                        <input type="number" placeholder="Enter Amount" required>
+                                                 </div>
+                                                 <div class="button input-box">
+                                                        <input type="button" value="Donate">
+                                                 </div>
+
+                                          </div>
+                                   </form>
+                            </div>
+
+                     </div>
+              </div>
+       </div> -->
+       <!-- <div class="wrapper mx-width">
+              <div class="counter-container">
+                     <i class="fas fa-user"></i>
+                     <span class="num" data-val="340">000</span>
+                     <span class="text">VOLUNTEERS</span>
+              </div>
+              <div class="counter-container">
+                     <i class="fas fa-handshake"></i>
+                     <span class="num" data-val="225">000</span>
+                     <span class="text">NGOs</span>
+              </div>
+              <div class="counter-container">
+                     <i class="fa-solid fa-indian-rupee-sign"></i>
+                     <span class="num" data-val="280">000</span>
+                     <span class="text">DONATIONS</span>
+              </div>
+       </div> -->
+
+
+       <div class="about-me">
+              <div class="about-me-text">
+                     <h2>How Your Donation Could Help...</h2><br>
+                     <p>A donation from you today could help us to deliver our front-line services ,<br>to more clients,
+                            and support
+                            people in hospitals and communities by:
+                            supporting patients as they return home from hospital alone, helping them to get back on
+                            their feet
+                            providing safe and secure transport to our clubs, and to and from essential medical
+                            appointments
+                            making personal calls and welfare checks
+                            increasing the number of our lunch and social clubs so that people can enjoy a hot,
+                            nutritious meal in the
+                            company of others.
+                     </p>
+              </div>
+              <img src="images/helping-people.jpeg" alt="me">
+       </div>
+
+
+
+       <footer class="bg-body-tertiary text-center text-lg-start">
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                     © 2024 Copyright:
+                     <a class="text-body" href="../index.html">ImpactHub</a>
+              </div>
+              <!-- Copyright -->
+       </footer>
+       <script src="../script.js"></script>
+       <script src="../Num_Counter.js"></script>
+
+</body>
+
+</html>

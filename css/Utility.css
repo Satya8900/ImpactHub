@@ -1,0 +1,29 @@
+:root {
+       --logo-clr: #570026;
+}
+
+.logo-clr {
+       background-color: #570026;
+}
+
+.logo-clr-txt {
+       color: #570026;
+}
+
+.mx-width {
+       width: 100%;
+}
+
+.mx-height {
+       height: 100vh;
+}
+
+#bootstrap-override .open {
+       color: #570026;
+       font-weight: 700;
+       text-shadow: 0px 0px 1px yellow;
+}
+
+.mr-1{
+       margin-right: 1vw;
+}

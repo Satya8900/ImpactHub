@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <link rel="icon" type="image/x-icon" href="../Assets/logo/logoJpg-photoaidcom-cropped.jpg">
+
+       <link rel="stylesheet" href="../css/style.css">
+       <link rel="stylesheet" href="../css/Utility.css">
+       <link rel="stylesheet" href="blog_style.css">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+              crossorigin="anonymous"></script>
+
+       <title>ImpactHub</title>
+
+</head>
+
+<body id="bootstrap-override">
+       <!-- navbar start   -->
+       <!-- Image and text -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="#">
+                            <img src="../Assets/logo/logoNpng.png" alt="ImpactHub" height="35px" width="35px">
+                            ImpactHub
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ImpactHub</h5>
+                                   <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                          <li class="nav-item">
+                                                 <a class="nav-link active logo-clr-txt" aria-current="page"
+                                                        href="../index.html">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active open" aria-current="page"
+                                                        href="../Volunteer.html">Volunteer</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../ngo.html">Ngos</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../aboutus.html">AboutUs</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="../contactus.html">ContactUs</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        LogIn/JoinUs
+                                                 </a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="../login.php">LogIn</a></li>
+                                                        <li><a class="dropdown-item" onclick="toast()">SingUp</a> </li>
+                                                 </ul>
+                                          </li>
+                                          <li class="nav-item active">
+                                                 <a class="nav-link py-0" href="../Donation/donation.html">
+                                                        <button type="button"
+                                                               class="btn btn-outline-primary donatebtn">Donate</button>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+       <!-- navbar end -->
+       <!-- toast start -->
+       <div id="toast-id" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body text-capitalize">
+                     <div class="d-flex justify-content-between">
+                            <h5>Hello,Who Are You ?</h5>
+                            <button onclick="toastclose()" type="button" class="btn-close" data-bs-dismiss="toast"
+                                   aria-label="Close"></button>
+                     </div>
+                     <div id="btn" class="mt-2 pt-2 border-top">
+                            <a href="../signUp-ngo.php">
+                                   <button class="btn btn-outline-primary donatebtn">NGO</button>
+                            </a>
+                            <a href="../signUp-vol.php">
+                                   <button class="btn btn-outline-primary donatebtn">Volunteer</button>
+                            </a>
+                     </div>
+              </div>
+       </div>
+
+
+       <div class="container">
+              <header class="header_container">
+                     <h1 class="header_tittle">Volunteer Story</h1>
+
+
+              </header>
+              <main class="main_container">
+                     <!--convert to grid-->
+                     <!-- card 1 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_1.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/somya-vishwanath-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_1.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Meet Soumya Vishwanath, who leveraged her graphic design skills by
+                                                 volunteering virtually to help our Partner NGO fight against child
+                                                 sexual abuse. Her efforts have helped save the NGO over Rs 1,60,000
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_1.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 1 ends here -->
+
+                     <!-- card 2 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_2.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/juveria-iqbal-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_2.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 #VolunteerSpeaks : Juveria Iqbal found out about ImpactHub while
+                                                 looking for volunteering opportunities matching her skill set. She
+                                                 enhanced her graphic design skills
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_2.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 2 ends here -->
+
+                     <!-- card 3 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_3.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/kritika-das-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_3.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Kritika Das has been working with our Partner NGO Ek Tara for 2 years
+                                                 and she has been a part of our ImpactHub Artshala. She was excited to
+                                                 be a part of the event
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_3.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 3 ends here -->
+
+                     <!-- card 4 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_4.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/hazel-gogri-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_4.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Hazel Gogri found out about ImpactHub while looking for volunteering
+                                                 opportunities after giving her medicine entrance exam.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_4.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 4 ends here -->
+
+                     <!-- card 5 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_5.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/sn-saroja-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_5.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Saroja Nagraj - Featuring today we have S N Saroja who has been an
+                                                 active volunteer at ImpactHub. She is a retired professional and is
+                                                 very passionate about creating educational content for children.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_5.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 5 ends here -->
+
+                     <!-- card 6 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_6.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/mayur-koli-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_6.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Mayur Koli - Over 60 Lakh children in India are still unable to go to
+                                                 school. For the children going to school there is only 1 teacher per 50
+                                                 students.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_6.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 6 ends here -->
+
+                     <!-- card 7 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_7.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/ramesh-adhikari-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_7.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Ramesh Adhikari has been an active volunteer with us since 2021. He has
+                                                 volunteered with more than 06 NGOs by helping them build, develop and
+                                                 update their websites.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_7.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 7 ends here -->
+
+                     <!-- card 8 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_8.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/pallavi-khurana-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_8.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Featuring today on Mother's Day is the testimonial of our volunteer
+                                                 Pallavi Khurana, a Corporate Soft Skills Trainer and a mother of 2
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_8.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 8 ends here -->
+
+                     <!-- card 9 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_9.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/aditi-suba-590x360.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_9.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Aditi Suba is working as a Data Engineer at an IT firm and has been
+                                                 volunteering with us since 2019 for various activities
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_9.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 9 ends here -->
+
+                     <!-- card 10 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_10.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/vrinda-yadav-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_10.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Vrinda is a 19-year-old student pursuing her BA.LLB from UPES
+                                                 University. She came across ImpactHub through her college as they
+                                                 required them to do an internship in an NGO during the summer.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_10.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 10 ends here -->
+
+                     <!-- card 11 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_11.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/aditi-chhajed-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_11.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Aditi has been virtually volunteering with 2 of our NGO Partners Little
+                                                 Hearts Foundation and Healing Dove Foundation and here's what she has
+                                                 to say about her experience
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_11.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 11 ends here -->
+
+                     <!-- card 12 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_12.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/khushboo-sati-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_12.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Khushboo heard about ImpactHub during the lockdown while she was
+                                                 pursuing her degree college.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_12.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 12 ends here -->
+
+                     <!-- card 13 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_13.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/verve-society-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_13.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Verve Society volunteered for over 1600 hours and created an impact of
+                                                 more than ₹ 06,00,000 for our partner NGO Umoya Sports Foundation
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_13.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 13 ends here -->
+
+                     <!-- card 14 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_14.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/abeez-dalvi-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_14.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Abeez has been a volunteer with The Welfare of Stray Dogs for the past
+                                                 2 years now and has been involved in multiple activities since then.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_14.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 14 ends here -->
+
+                     <!-- card 15 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_15.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/harshitha-gowda-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_15.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Harshitha has been volunteering with our partner NGO Robin Hood Army
+                                                 Bengaluru for almost 2 years now.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_15.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 15 ends here -->
+
+                     <!-- card 16 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_16.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/aashka-vora-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_16.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Aashka has been a dedicated volunteer since she discovered the
+                                                 ImpactHub website 2 years ago. So far Aashka has successfully
+                                                 volunteered with 2 of our NGO Partners
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+                                   <a href="vol_story/vs_16.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 16 ends here -->
+
+                     <!-- card 17 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_17.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/chetona-bandyopadhyay-thmb.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_17.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Chetona Bandyopadhyay - During her course at the University, Chetona
+                                                 was connected with our NGO Partner - Myjis Foundation as an intern and
+                                                 she successfully
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_17.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 17 ends here -->
+
+                     <!-- card 18 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_18.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/vismay-parab.png" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_18.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Hear from one of ImpactHub’s very first volunteers - Vismay Parab!
+                                                 Vismay has been connected with ImpactHub since 2015, and has been a
+                                                 huge asset
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_18.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 18 ends here -->
+
+                     <!-- card 19 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_19.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/mirthu-bashini.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_19.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Meet Mirthu Bashini, a changemaker who has successfully completed her
+                                                 volunteering journey with our NGO Partner - Vivekananda Youth Forum.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_19.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 19 ends here -->
+
+                     <!-- card 20 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_20.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/ashwini-sawant.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_20.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 “The pandemic definitely triggered the search for volunteering
+                                                 opportunities,” says Ashwini Sawant
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_20.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 20 ends here -->
+
+                     <!-- card 21 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_21.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/yuvika-agarwal.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_21.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 “ImpactHub was the first result to come up and I didn’t have to check
+                                                 further after that as ImpactHub had NGO requirements with all sorts of
+                                                 skill sets and it really made the whole process convenient for me,”
+                                                 says Yuvika
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_21.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 21 ends here -->
+
+                     <!-- card 22 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_22.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/ayush-sarawagi.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_22.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Meet Ayush Sarawagi, a young changemaker who volunteered recently and
+                                                 completed an administrative project with our NGO partner, Makkala
+                                                 Jagriti.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_22.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 22 ends here -->
+
+                     <!-- card 23 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_23.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/757_41_arpana-desai.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_23.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 “Virtual volunteering is an exceptionally well thought concept, it
+                                                 really does not limit your ability to volunteer based on your or
+                                                 person's physical location.”
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_23.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 23 ends here -->
+
+                     <!-- card 24 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_24.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/pratibha-shetty.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_24.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Pratibha is a changemaker at ImpactHub since 2018, and now a familiar
+                                                 face during most of our Group Virtual Volunteering activities.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_24.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 24 ends here -->
+
+                     <!-- card 25 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_25.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/parinaaz.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_25.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Parinaaz did her bit by Volunteering in HR and has created a
+                                                 significant impact! Here is what she has to say about her experience -
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_25.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 25 ends here -->
+
+                     <!-- card 26 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_26.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/pruthvi-shah.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_26.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Pruthvi Shah did his bit by Volunteering as a Photographer and has
+                                                 impacted many young lives!
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_26.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 26 ends here -->
+
+                     <!-- card 27 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_27.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/tamanna-gupta.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_27.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Tamanna did her bit by Volunteering in Strategic planning, Brand
+                                                 Building and many more and has created a significant impact!
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_27.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 27 ends here -->
+
+                     <!-- card 28 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_28.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/dhvani-olenka.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_28.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Here is how Volunteering got two friends to spend time together. Being
+                                                 in different colleges, we don’t get enough time to meet often,
+                                                 volunteering for opportunities by ImpactHub
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_28.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 28 ends here -->
+
+                     <!-- card 29 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_29.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/arjun-rao.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_29.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Dr. Arjun was connected to Ghaswala Vision Foundation. Here is what he
+                                                 has to share about his experience. "Ghaswala vision foundation has a
+                                                 strong agenda
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_29.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 29 ends here -->
+
+                     <!-- card 30 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_30.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/binal.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_30.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Here is Binal's story. A mind and skill development specialist by
+                                                 profession,she made a difference by using her skills and conducted
+                                                 various Motivational Therapy sessions with our NGO partners
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_30.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 30 ends here -->
+
+                     <!-- card 31 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_31.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/sanidhya-sharma.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_31.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Sanidhya did his bit by volunteering to teach kids English and Maths
+                                                 and has created a significant impact!
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_31.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 31 ends here -->
+
+                     <!-- card 32 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_32.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/siddharth-dembi.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_32.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Our volunteer, Sidharth Dembi, has been working as a Math teacher with
+                                                 the Angel Express Foundation since 2017.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_32.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 32 ends here -->
+
+                     <!-- card 33 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_33.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/amruta-gupta.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_33.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 One of our volunteers, Amruta Gupta, has been remotely working as the
+                                                 Creative Support Intern with the SNEH Foundation since April 2019.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_33.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 33 ends here -->
+
+                     <!-- card 34 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_34.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/arushi-nagar.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_34.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Arushi Nagar is our star volunteer for this month! She hails from
+                                                 Varanasi and is doing her fellowship with TFI at the moment in
+                                                 Ahmedabad.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_34.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 34 ends here -->
+
+                     <!-- card 35 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_35.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/srishti-ratna-N.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_35.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Our star volunteer of the month, Srishti started out as a one-time
+                                                 volunteer at our community events which she found to be impactful and
+                                                 well thought out.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_35.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 35 ends here -->
+
+                     <!-- card 36 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_36.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/prashant-shivagan.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_36.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Our star volunteer of the month, Mr. Prashant Shivagan hails from
+                                                 Mumbai. He was looking to help an NGO and stumbled across ImpactHub
+                                                 through an internet search.
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_36.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 36 ends here -->
+
+                     <!-- card 37 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_37.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/krishna-gajjar-N.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_37.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Meet Krishna Gajjar @_krishnagajjar , one of our youngest virtual
+                                                 volunteers! Here is what she wants to say about her volunteering
+                                                 journey so far with ImpactHub,
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_37.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 37 ends here -->
+
+                     <!-- card 38 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_38.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/vipulkumar.jpg" alt="card 1 image" class="card_image"
+                                          loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_38.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Meet our star volunteer @vipulskumar 🌟
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_38.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 38 ends here -->
+
+                     <!-- card 39 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_39.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/swapna-salian-new.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_39.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Swapna Salian has successfully completed her Micro Volunteering journey
+                                                 with ImpactHub. Here’s what she has to say about
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_39.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 39 ends here -->
+
+                     <!-- card 40 start -->
+                     <div class="card_container">
+                            <a href="vol_story/vs_40.html" class="card_image_container">
+
+                                   <img src="images/Volunteer/52_468_waseem-storydetail.jpg" alt="card 1 image"
+                                          class="card_image" loading="lazy">
+                            </a>
+                            <div class="card_tittle_container">
+                                   <a href="vol_story/vs_40.html" class="card_tittle_anchour">
+                                          <h1 class="card_tittle">
+                                                 Waseem was a volunteer with the ImpactHub team, and quickly became a
+                                                 highly contributing and impactful peer for us!
+                                          </h1>
+                                   </a>
+                            </div>
+                            <div class="card_footer_container">
+
+                                   <a href="vol_story/vs_40.html">
+
+                                          <Button class="rmbtn">Read More</Button>
+                                   </a>
+                            </div>
+                     </div>
+                     <!-- card 40 ends here -->
+              </main>
+
+       </div>
+
+       <footer class="bg-body-tertiary text-center text-lg-start">
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                     © 2024 Copyright:
+                     <a class="text-body" href="../index.html">ImpactHub</a>
+              </div>
+              <!-- Copyright -->
+       </footer>
+       <script src="../script.js"></script>
+
+
+</body>
+
+</html>

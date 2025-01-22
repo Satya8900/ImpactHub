@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.tag-line_ngo {
+       font-size: 4vw;
+       position: absolute;
+       top: 75vh;
+       left: 16vw;
+       color: whitesmoke;
+       text-shadow: 2px 2px 5px black;
+}
+
+.tag-line_ngo span {
+       color: #4da0d6;
+       font-family: "Kaushan Script", cursive;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 7vw;
+}
+
+.work-info {
+       margin: 4vh 0vw 4vh;
+       display: flex;
+       justify-content: center;
+}
+
+.work-span {
+       color: #398cc1;
+       font-weight: 600;
+}
+
+.find_v {
+       display: flex;
+       justify-content: space-between;
+       padding: 25px;
+}
+
+.fv_btn {
+       padding-top: 15px;
+}
+
+#hiw-img-mob {
+       display: none;
+}
+
+.allbtn-div {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 32px;
+}
+
+#bootstrap-override .allbtn {
+       color: black;
+       border-color: black;
+       border-radius: 3px;
+}
+
+#bootstrap-override .allbtn:hover {
+       background-color: antiquewhite;
+}
+
+@media (max-width: 670px) {
+       .find_v {
+              display: block;
+       }
+
+       #hiw-img-mob {
+              display: block;
+              padding-top: 0px;
+       }
+
+       #hiw-img {
+              display: none;
+       }
+}

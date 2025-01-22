@@ -1,0 +1,125 @@
+body {
+       font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+       box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+       box-sizing: inherit;
+}
+
+.bf {
+       font-size: 30px;
+}
+
+.gf {
+       font-size: 20px;
+       text-align: left;
+       font-family: "Lalezar", system-ui;
+       margin: 0px 30px 0px 10px;
+       max-width: 70%;
+}
+
+#bootstrap-override .column {
+       float: left;
+       width: 20%;
+       margin-bottom: 16px;
+       padding: 0 8px;
+}
+
+.card {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       margin: 8px;
+}
+
+#our-mission {
+       height: 42vh;
+}
+
+.about-section {
+       padding: 50px;
+       text-align: center;
+       background-color: #960042;
+       color: white;
+       margin-top: 3vh;
+}
+
+.container {
+       padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+       content: "";
+       clear: both;
+       display: table;
+}
+
+.title {
+       color: grey;
+}
+
+.button {
+       border: none;
+       outline: 0;
+       display: inline-block;
+       padding: 8px;
+       color: whitesmoke;
+       background-color: var(--logo-clr);
+       text-align: center;
+       cursor: pointer;
+       width: 100%;
+       border-radius: 5px;
+}
+
+.button:hover {
+       background-color: #555;
+}
+
+#bootstrap-override .story {
+       --bs-gutter-x: 0rem;
+}
+
+
+@media screen and (max-width: 767px) {
+       #bootstrap-override .column {
+              width: 100%;
+              display: block;
+       }
+
+       #our-mission {
+              height: initial;
+       }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+       #bootstrap-override .row>* {
+              width: 100%;
+       }
+
+       #our-mission {
+              height: initial;
+       }
+
+       .about-section {
+              margin-top: 5vh;
+       }
+}
+
+@media screen and (min-width:1024px) {
+       #bootstrap-override .container>h2 {
+              font-size: 1.5rem;
+       }
+
+       #our-mission {
+              height: initial;
+       }
+
+       .about-section {
+              margin-top: 5vh;
+       }
+}

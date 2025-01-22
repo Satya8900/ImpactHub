@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+       <link rel="icon" type="image/x-icon" href="Assets/logo/logoJpg-photoaidcom-cropped.jpg">
+
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/Utility.css">
+       <link rel="stylesheet" href="blog/blog_style.css">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+              crossorigin="anonymous"></script>
+
+       <!-- FontAwesome Icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+       <title>ImpactHub</title>
+</head>
+
+<body class="index" id="bootstrap-override">
+
+       <!-- navbar start   -->
+       <!-- Image and text -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="#">
+                            <img src="Assets/logo/logoNpng.png" alt="ImpactHub" height="35px" width="35px">
+                            ImpactHub
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ImpactHub</h5>
+                                   <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                          <li class="nav-item">
+                                                 <a class="nav-link active open" aria-current="page" href="#">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="Volunteer.html">Volunteer</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page" href="ngo.html">Ngos</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="aboutus.html">AboutUs</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="contactus.html">ContactUs</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        LogIn/JoinUs
+                                                 </a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="login.php">LogIn</a></li>
+                                                        <li><a class="dropdown-item" onclick="toast()">SingUp</a> </li>
+                                                 </ul>
+                                          </li>
+                                          <li class="nav-item active">
+                                                 <a class="nav-link py-0" href="Donation/donation.html">
+                                                        <button type="button"
+                                                               class="btn btn-outline-primary donatebtn">Donate</button>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+       <!-- navbar end -->
+
+       <!-- toast start -->
+       <div id="toast-id" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body text-capitalize">
+                     <div class="d-flex justify-content-between">
+                            <h5>Hello,Who Are You ?</h5>
+                            <button onclick="toastclose()" type="button" class="btn-close" data-bs-dismiss="toast"
+                                   aria-label="Close"></button>
+                     </div>
+                     <div id="btn" class="mt-2 pt-2 border-top">
+                            <a href="signUp-ngo.php">
+                                   <button class="btn btn-outline-primary donatebtn">NGO</button>
+                            </a>
+                            <a href="signUp-vol.php">
+                                   <button class="btn btn-outline-primary donatebtn">Volunteer</button>
+                            </a>
+                     </div>
+              </div>
+       </div>
+
+       <main>
+
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                   class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                   aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                   aria-label="Slide 3"></button>
+                     </div>
+                     <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                   <img src="Assets/images/img.jpeg" class="d-block w-100" alt="...">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5 class="tag-line">" It's Not How Much We Give ,<br>But How Much Love We Put
+                                                 Into Giving... " </h5>
+                                   </div>
+                            </div>
+                            <div class="carousel-item">
+                                   <img src="Assets/images/img4.jpeg" class="d-block w-100" alt="...">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5 class="tag-line">"Don't Expect To See A Change If You Don't Make One..."
+                                          </h5>
+                                   </div>
+                            </div>
+                            <div class="carousel-item">
+                                   <img src="Assets/images/img1.jpeg" class="d-block w-100" alt="...">
+                                   <div class="carousel-caption d-none d-md-block">
+                                          <h5 class="tag-line">"Somewhere Inside All Of Us Is <br>The Power To Change
+                                                 The World... "</h5>
+                                   </div>
+                            </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                     </button>
+              </div>
+              <div class="find_v">
+                     <div class="fv_txt">
+                            <h2>Find the Right Opportunities</h2>
+                            <p>Work with ImpactHub to find the best Opportunities based on your skill.</p>
+                     </div>
+                     <div class="fv_btn">
+                            <a href="Volunteer.html"><button type="button" class="btn btn-outline-primary">Explore
+                                          Now</button></a>
+                     </div>
+              </div>
+
+              <div id="explr" class="row row-cols-1 row-cols-md-3 g-4">
+                     <!-- Card-1 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/contentmanagemntcreationthumb.jpg" class="card-img-top"
+                                          alt="Content Writing Volunteer">
+                                   <div class="card-body">
+                                          <h5 class="card-title pb-4">Content Writing Volunteer</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>Education & Literacy</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>2 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Remote</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>Shree Arbuda Residential Welfare Association (SARWA)</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- Card-2 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/awarenesscampaignthumb.jpg" class="card-img-top"
+                                          alt="Teaching Awareness Workshop Volunteer">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Teaching Awareness Workshop Volunteer</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>Children</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>4 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Onsite-Delhi</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>Anukulan</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- Card-3 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/socialmediathumb-n.jpg" class="card-img-top"
+                                          alt="Social Media Volunteer">
+                                   <div class="card-body">
+                                          <h5 class="card-title pb-4">Social Media Volunteer</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>Health</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>4 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Remote</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>The Unicorn Xpress Foundation</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- Card-4 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/civicthumb.jpg" class="card-img-top"
+                                          alt="Beach cleanup drive at Mahim Chowpatty">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Beach cleanup drive at Mahim Chowpatty</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>Environment & Sustainability</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>2 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Onsite-Mumbai</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>MUSKURATE RAHO</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- Card-5 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/psychologythumb.jpg" class="card-img-top"
+                                          alt="Psychology Volunteer">
+                                   <div class="card-body">
+                                          <h5 class="card-title pb-4">Psychology Volunteer</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>LGBTQ+</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>3 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Remote</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>Healing Dove Foundation</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- Card-6 Start  -->
+                     <div class="col">
+                            <div class="card h-100">
+                                   <img src="Assets/images/websitedevelopmentthumb.jpg" class="card-img-top"
+                                          alt="Website Development Volunteer">
+                                   <div class="card-body">
+                                          <h5 class="card-title pb-4">Website Development Volunteer</h5>
+                                          <div class="card-info"><img class="card-info-icon-category"
+                                                        src="Assets/images/category.png" alt="">
+                                                 <p>LGBTQ+</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/clock.png" alt="">
+                                                 <p>3 Months</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon"
+                                                        src="Assets/images/location.png" alt="">
+                                                 <p>Remote</p>
+                                          </div>
+                                          <div class="card-info"><img class="card-info-icon" src="Assets/images/ngo.png"
+                                                        alt="">
+                                                 <p>Healing Dove Foundation</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <div class="wrapper mx-width">
+                     <div class="counter-container">
+                            <i class="fas fa-user"></i>
+                            <span class="num" data-val="340">000</span>
+                            <span class="text">VOLUNTEERS</span>
+                     </div>
+                     <div class="counter-container">
+                            <i class="fas fa-handshake"></i>
+                            <span class="num" data-val="225">000</span>
+                            <span class="text">NGOs</span>
+                     </div>
+                     <div class="counter-container">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="num" data-val="280">000</span>
+                            <span class="text">DONATIONS</span>
+                     </div>
+              </div>
+              <div class="ngo-explore-dsk">
+                     <h2 class="explr-txt">Find <span>Passionate Volunteers</span> For Your NGO</h2>
+                     <img src="Assets/images/passionate-volunteers-dsk.png" class="img-fluid mx-width" alt="...">
+                     <a href="ngo.html"><button type="button" class="btn btn-primary index-explr-btn">Explore
+                                   Now</button></a>
+              </div>
+              <div class="ngo-explore-mob">
+                     <h2 class="explr-txt">Find <span>Passionate Volunteers</span> For Your NGO</h2>
+                     <img src="Assets/images/passionate-volunteers-tab.png" class="img-fluid mx-width" alt="...">
+                     <a href="ngo.html"><button type="button" class="btn btn-primary index-explr-btn">Explore
+                                   Now</button></a>
+              </div>
+              <div class="ngo-explore-dsk">
+                     <h2 class="explr-txt">Get The <span>Right Opportunities</span> For Volunteering</h2>
+                     <img src="Assets/images/ngo-dsk.jpeg" class="img-fluid mx-width" alt="...">
+                     <a href="Volunteer.html"><button type="button" class="btn btn-primary index-explr-btn">Explore
+                                   Now</button></a>
+              </div>
+              <div class="ngo-explore-mob">
+                     <h2 class="explr-txt">Get The <span>Right Opportunities</span> For Volunteering</h2>
+                     <img src="Assets/images/ngo-mob.jpeg" class="img-fluid mx-width" alt="...">
+                     <a href="Volunteer.html"><button type="button" class="btn btn-primary index-explr-btn">Explore
+                                   Now</button></a>
+              </div>
+              <div class="ngo-explore-dsk">
+                     <h2 class="explr-txt">Make An <span>Impact On Society</span> By Donations</h2>
+                     <img src="Assets/images/donation-dsk.jpeg" class="img-fluid mx-width" alt="...">
+                     <a href="Donation/donation.html"><button type="button"
+                                   class="btn btn-primary index-explr-btn">Donate Us</button></a>
+              </div>
+              <div class="ngo-explore-mob">
+                     <h2 class="explr-txt">Make An <span>Impact On Society</span> By Donations</h2>
+                     <img src="Assets/images/donation-mob.jpeg" class="img-fluid mx-width" alt="...">
+                     <a href="Donation/donation.html"><button type="button"
+                                   class="btn btn-primary index-explr-btn">Donate Us</button></a>
+              </div>
+              <div class="blog-heading">
+                     <h2>NGO's <span class="b-heading-txt">Stories</span></h2>
+              </div>
+              <div class="container mt-0 pt-0">
+                     <div class="main_container">
+                            <!-- card 13 start -->
+                            <div class="card_container">
+                                   <a href="blog/ngo_story/ngo_13.html" class="card_image_container">
+
+                                          <img src="https://www.connectfor.org/lighthouse-project-n.jpg"
+                                                 alt="card 1 image" class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/ngo_story/ngo_13.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Madhura from Lighthouseindia has a take on how ImpactHub helped
+                                                        them
+                                                        as a volunteering platform and met their volunteering
+                                                        requirements.
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/ngo_story/ngo_13.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 13 ends here -->
+
+                            <!-- card 14 start -->
+                            <div class="card_container">
+                                   <a href="blog/ngo_story/ngo_14.html" class="card_image_container">
+
+                                          <img src="https://www.connectfor.org/manpasand-life.jpg" alt="card 1 image"
+                                                 class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/ngo_story/ngo_14.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Nimisha from Manpasand Life has a take on how ImpactHub helped
+                                                        them as
+                                                        a volunteering platform and met their volunteering requirements.
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/ngo_story/ngo_14.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 14 ends here -->
+
+                            <!-- card 15 start -->
+                            <div class="card_container">
+                                   <a href="blog/ngo_story/ngo_15.html" class="card_image_container">
+
+                                          <img src="https://www.connectfor.org/shaktii.jpg" alt="card 1 image"
+                                                 class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/ngo_story/ngo_15.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Vimala from Shakti has a take on how ImpactHub helped them as a
+                                                        volunteering platform and met their volunteering requirements.
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/ngo_story/ngo_15.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 15 ends here -->
+                     </div>
+              </div>
+              <div class="b-allbtn-div">
+                     <a href="blog/NS_home.html">
+                            <button type="button" class="btn btn-outline-primary b-allbtn">Browse all Stories ></button>
+                     </a>
+              </div>
+
+              <div class="blog-heading">
+                     <h2>Volunteer's <span class="b-heading-txt">Stories</span></h2>
+              </div>
+              <div class="container mt-0 pt-0">
+                     <div class="main_container">
+                            <!-- card 10 start -->
+                            <div class="card_container">
+                                   <a href="blog/vol_story/vs_10.html" class="card_image_container">
+
+                                          <img src="blog/images/Volunteer/vrinda-yadav-thmb.jpg" alt="card 1 image"
+                                                 class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/vol_story/vs_10.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Vrinda is a 19-year-old student pursuing her BA.LLB from UPES
+                                                        University. She came across ImpactHub through her college as
+                                                        they
+                                                        required them to do an internship in an NGO during the summer.
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/vol_story/vs_10.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 10 ends here -->
+
+                            <!-- card 11 start -->
+                            <div class="card_container">
+                                   <a href="blog/vol_story/vs_11.html" class="card_image_container">
+
+                                          <img src="blog/images/Volunteer/aditi-chhajed-thmb.jpg" alt="card 1 image"
+                                                 class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/vol_story/vs_11.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Aditi has been virtually volunteering with 2 of our NGO Partners
+                                                        Little
+                                                        Hearts Foundation and Healing Dove Foundation and here's what
+                                                        she has
+                                                        to say about her experience
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/vol_story/vs_11.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 11 ends here -->
+
+                            <!-- card 36 start -->
+                            <div class="card_container">
+                                   <a href="blog/vol_story/vs_36.html" class="card_image_container">
+
+                                          <img src="blog/images/Volunteer/prashant-shivagan.jpg" alt="card 1 image"
+                                                 class="card_image" loading="lazy">
+                                   </a>
+                                   <div class="card_tittle_container">
+                                          <a href="blog/vol_story/vs_36.html" class="card_tittle_anchour">
+                                                 <h1 class="card_tittle">
+                                                        Our star volunteer of the month, Mr. Prashant Shivagan hails
+                                                        from
+                                                        Mumbai. He was looking to help an NGO and stumbled across
+                                                        ImpactHub
+                                                        through an internet search.
+                                                 </h1>
+                                          </a>
+                                   </div>
+                                   <div class="card_footer_container">
+
+                                          <a href="blog/vol_story/vs_36.html">
+
+                                                 <Button class="rmbtn">Read More</Button>
+                                          </a>
+                                   </div>
+                            </div>
+                            <!-- card 36 ends here -->
+                     </div>
+              </div>
+              <div class="b-allbtn-div">
+                     <a href="blog/VS_home.html">
+                            <button type="button" class="btn btn-outline-primary b-allbtn">Browse all Stories ></button>
+                     </a>
+              </div>
+
+       </main>
+       <footer class="bg-body-tertiary text-center text-lg-start">
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                     © 2024 Copyright:
+                     <a class="text-body" href="index.html">ImpactHub</a>
+              </div>
+              <!-- Copyright -->
+       </footer>
+       <script src="script.js"></script>
+       <script src="Num_Counter.js"></script>
+
+
+</body>
+
+</html>

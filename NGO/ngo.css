@@ -1,0 +1,264 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* body::-webkit-scrollbar {
+       display: none;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px 20px 0px 20px;
+}
+
+footer {
+  margin-top: 2vh;
+}
+
+.user-name {
+  margin-top: 10vh;
+  margin-left: 2vw;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+#bootstrap-override .accordion-button {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  /* background: #ebe5f982; */
+}
+
+#bootstrap-override .accordion-button:focus {
+  box-shadow: unset;
+}
+
+#bootstrap-override .accordion-button:not(.collapsed) {
+  color: unset;
+  /* background-color: #ebe5f9d6; */
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.bg-light {
+  padding: 3rem;
+}
+
+.bg-light h3 {
+  display: flex;
+  justify-content: center;
+}
+
+td,
+tr th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+td button {
+  margin-top: 5px;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: antiquewhite;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+#bootstrap-override #gender-box-h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.accordion-body #explr {
+  margin: 0px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+
+@media only screen and (max-width:800px) {
+
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #no-more-tables td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  #no-more-tables td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
+
+  #no-more-tables tr {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+  body {
+    padding: 0px;
+  }
+
+  .bg-light {
+    padding: 0px;
+  }
+
+  #bootstrap-override .accordion-body {
+    padding: 0px;
+  }
+
+  td,
+  tr th {
+    text-align: initial;
+    vertical-align: initial;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+
+  #bootstrap-override .table-responsive {
+    overflow-wrap: anywhere;
+  }
+}

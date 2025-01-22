@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+       <link rel="icon" type="image/x-icon" href="Assets/logo/logoJpg-photoaidcom-cropped.jpg">
+
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/Utility.css">
+       <link rel="stylesheet" href="css/aboutus.css">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+              crossorigin="anonymous"></script>
+
+       <title>ImpactHub</title>
+</head>
+
+<body id="bootstrap-override">
+       <!-- navbar start   -->
+       <!-- Image and text -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                     <a class="navbar-brand" href="#">
+                            <img src="Assets/logo/logoNpng.png" alt="ImpactHub" height="35px" width="35px">
+                            ImpactHub
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ImpactHub</h5>
+                                   <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                          <li class="nav-item">
+                                                 <a class="nav-link active logo-clr-txt" aria-current="page"
+                                                        href="index.html">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="Volunteer.html">Volunteer</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page" href="ngo.html">Ngos</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active open" aria-current="page"
+                                                        href="#">AboutUs</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                 <a class="nav-link active" aria-current="page"
+                                                        href="contactus.html">ContactUs</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        LogIn/JoinUs
+                                                 </a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="login.php">LogIn</a></li>
+                                                        <li><a class="dropdown-item" onclick="toast()">SingUp</a> </li>
+                                                 </ul>
+                                          </li>
+                                          <li class="nav-item active">
+                                                 <a class="nav-link py-0" href="Donation/donation.html">
+                                                        <button type="button"
+                                                               class="btn btn-outline-primary donatebtn">Donate</button>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+       </nav>
+       <!-- navbar end -->
+       <!-- toast start -->
+       <div id="toast-id" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body text-capitalize">
+                     <div class="d-flex justify-content-between">
+                            <h5>Hello,Who Are You ?</h5>
+                            <button onclick="toastclose()" type="button" class="btn-close" data-bs-dismiss="toast"
+                                   aria-label="Close"></button>
+                     </div>
+                     <div id="btn" class="mt-2 pt-2 border-top">
+                            <a href="signUp-ngo.php">
+                                   <button class="btn btn-outline-primary donatebtn">NGO</button>
+                            </a>
+                            <a href="signUp-vol.php">
+                                   <button class="btn btn-outline-primary donatebtn">Volunteer</button>
+                            </a>
+                     </div>
+              </div>
+       </div>
+
+       <div class="about-section">
+              <h1><u>About Us</u></h1>
+              <p class="bf">Some text about who we are and what our vision.</p>
+              <p>Impacthub is a non-profit organisation that seeks to contribute to the developmental sector by
+                     facilitating engagement of the volunteering community, building capacity, and creating value added
+                     services for NGOs.....<br>Impacthub aims to provide comprehensive resource solutions for the social
+                     sector by creating symbiosis amongst NGOS, volunteers and corporates, and adding value and
+                     structure to these associations.....</p>
+       </div>
+
+       <h2 style="text-align:center">Our Team</h2>
+       <div class="row">
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/satya.jpeg" alt="satya" style="width:100%">
+                            <div class="container">
+                                   <h2>Satyanarayan Pattnayak</h2>
+                                   <p class="title">CEO & Founder</p>
+                                   <p></p>
+                                   <p>Ph-6371341283</p>
+                                   <p><a href="https://www.linkedin.com/in/satyanp/"><button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/subham.jpeg" alt="nanu" style="width:100%">
+                            <div class="container">
+                                   <h2>Subham <br>Rauta</h2>
+                                   <p class="title">Project Director </p>
+                                   <p></p>
+                                   <p>Ph-8328878559</p>
+                                   <p><a href="https://www.linkedin.com/in/subham-rauta-0869b2242/"><button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/adarsh.jpeg" alt="geli" style="width:100%">
+                            <div class="container">
+                                   <h2>Adarsh Pr. Maharana</h2>
+                                   <p class="title">Creative Director</p>
+                                   <p></p>
+                                   <p>Ph-7789943938</p>
+                                   <p><a href="https://www.linkedin.com/in/adarsh-prasad-maharana-291308296/"> <button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/nitin.jpeg" alt="nitu" style="width:100%">
+                            <div class="container">
+                                   <h2>Nitin <br>Bishoyi</h2>
+                                   <p class="title">Director of Research</p>
+                                   <p></p>
+                                   <p>Ph-7606961616</p>
+                                   <p><a href="https://www.linkedin.com/in/nitin-kumar-8110b1292/"><button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+
+
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/rudra.jpeg" alt="rudra" style="width:100%">
+                            <div class="container">
+                                   <h2>Rudra Prasad Dakua</h2>
+                                   <p class="title">Director Of Impact</p>
+                                   <p></p>
+                                   <p>Ph-6371297343</p>
+                                   <p><a href="https://www.linkedin.com/in/rudra-prasad-dakua-682739243/"><button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       <div class="row">
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/Sagar.jpeg" alt="sagar" style="width:100%">
+                            <div class="container">
+                                   <h2>Sagar <br> Barahi</h2>
+                                   <p class="title">Manager</p>
+                                   <p></p>
+                                   <p>Ph-6295811547</p>
+                                   <p><a href="https://www.linkedin.com/in/sagarbarahi/"><button
+                                                        class="button">Contact</button></a></p>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/Sangram.jpeg" alt="sangi" style="width:100%">
+                            <div class="container">
+                                   <h2>Sangram <br>Swain</h2>
+                                   <p class="title">Manager</p>
+                                   <p></p>
+                                   <p>Ph-6371604104</p>
+                                   <p><button class="button">Contact</button></p>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/Sili.jpeg" alt="rudra" style="width:100%">
+                            <div class="container">
+                                   <h2>Silirani <br> Tarei</h2>
+                                   <p class="title">Meeting Executive</p>
+                                   <p></p>
+                                   <p>Ph-7750048783</p>
+                                   <p><button class="button">Contact</button></p>
+                            </div>
+                     </div>
+              </div>
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/dati.jpeg" alt="rudra" style="width:100%">
+                            <div class="container">
+                                   <h2>Dweti Krushna Mohanty</h2>
+                                   <p class="title">Associative</p>
+                                   <p></p>
+                                   <p>Ph-6370165474</p>
+                                   <p><button class="button">Contact</button></p>
+                            </div>
+                     </div>
+              </div>
+              <div class="column">
+                     <div class="card">
+                            <img src="Assets/images/Muna.jpeg" alt="rudra" style="width:100%">
+                            <div class="container">
+                                   <h2>Muna <br> Dalabehera</h2>
+                                   <p class="title">Associative</p>
+                                   <p></p>
+                                   <p>Ph-7815092708</p>
+                                   <p><button class="button">Contact</button></p>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       <!--card-->
+       <div class="row story">
+              <div class="col-sm-6">
+                     <div class="card">
+                            <div class="card-body">
+                                   <h5 class="card-title">About Impacthub</h5>
+                                   <p class="card-text">In a world where countless challenges continue to plague our
+                                          society, there are those who stand up and take action, striving to make a
+                                          meaningful difference in the lives of those less fortunate.
+                                          Our NGO, Impacthub, is one such beacon of hope, dedicated to creating positive
+                                          change and impacting lives in profound ways.
+                                          This article serves as an introduction to our organization, shedding light on
+                                          our mission, values, and the unwavering commitment of our team to build a
+                                          brighter future for all.</p>
+                            </div>
+                     </div>
+              </div>
+              <div class="col-sm-6">
+                     <div class="card">
+                            <div class="card-body" id="our-mission">
+                                   <h5 class="card-title"> Our Mission</h5>
+                                   <p class="card-text">ImpactHub uplift marginalised communities, empower individuals,
+                                          and catalyse sustainable
+                                          change. We firmly believe that every individual deserves access to basic
+                                          necessities, education, healthcare, and opportunities that enable them to lead
+                                          dignified lives. We facilitate connections between NGOs and
+                                          volunteers, enabling them
+                                          to collaborate effectively to address social, environmental, or humanitarian
+                                          issues. Our website serves as a bridge between volunteers and communities in
+                                          need. </p>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       <div class="row story">
+              <div class="col-sm-6">
+                     <div class="card">
+                            <div class="card-body">
+                                   <h5 class="card-title">Our Story</h5>
+                                   <p class="card-text">Impacthub was founded in 2012 by a group of compassionate
+                                          individuals who shared a common vision of a world where poverty, inequality,
+                                          and injustice are a thing of the past. Inspired by their personal experiences
+                                          and the urgent need for change, these visionaries embarked on a journey that
+                                          would transform countless lives.</p>
+                            </div>
+                     </div>
+              </div>
+              <div class="col-sm-6">
+                     <div class="card">
+                            <div class="card-body">
+                                   <h5 class="card-title"> Our Values</h5>
+                                   <p class="card-text">Our organisation’s values are the guiding principles that shape
+                                          our actions, decisions, and interactions. They reflect our commitment to
+                                          transparency, accountability, and unwavering dedication to our cause:.We
+                                          approach our work with empathy and kindness, recognising the unique struggles
+                                          faced by each individual we serve.</p>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="row story">
+                     <div class="col-sm-6">
+                            <div class="card">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Our Impact</h5>
+                                          <p class="card-text">Over the years, Impacthub Trust has made a significant
+                                                 impact on the lives of countless individuals and communities. Through
+                                                 our collective efforts, we have:
+
+                                                 Educated thousands of children and adults, providing them with
+                                                 opportunities for a brighter future.
+
+                                                 Improved healthcare access and awareness, leading to healthier
+                                                 communities.
+
+                                                 Empowered women to become leaders in their families and communities.
+
+                                                 Contributed to environmental conservation efforts to protect our planet
+                                                 for future generations.</p>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="col-sm-6">
+                            <div class="card">
+                                   <div class="card-body">
+                                          <h5 class="card-title">Join Us in Making a Difference</h5>
+                                          <p class="card-text">As we reflect on our journey and accomplishments, we
+                                                 recognize that there is still much work to be done. The challenges we
+                                                 face are immense, but with the support of individuals like you, we can
+                                                 continue to make a difference.
+                                                 We invite you to join us in our mission, whether through volunteering,
+                                                 donating, or simply spreading the word about our work. Together, we can
+                                                 build a world where hope thrives, lives are transformed, and every
+                                                 individual has the opportunity to reach their full potential.</p>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+
+              <footer class="bg-body-tertiary text-center text-lg-start">
+                     <!-- Copyright -->
+                     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                            © 2024 Copyright:
+                            <a class="text-body" href="index.html">ImpactHub</a>
+                     </div>
+                     <!-- Copyright -->
+              </footer>
+              <script src="script.js"></script>
+
+</body>
+
+</html>

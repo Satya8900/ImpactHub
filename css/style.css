@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+       margin: 0;
+       padding: 0;
+}
+
+.navbar {
+       height: 8vh;
+}
+
+#bootstrap-override .navbar-brand {
+       font-family: "Bree Serif", serif;
+       font-size: 1.3rem;
+}
+
+.dropdown-item {
+       cursor: pointer;
+}
+
+#bootstrap-override .donatebtn {
+       color: var(--logo-clr);
+       border-color: var(--logo-clr);
+       margin-top: 1px;
+}
+
+#bootstrap-override .donatebtn:hover {
+       color: white;
+       background-color: var(--logo-clr);
+}
+
+#bootstrap-override .d-block {
+       height: 100vh;
+}
+
+.tag-line {
+       font-size: 2vw;
+       font-family: "Namdhinggo", serif;
+       color: #fafbfd;
+       text-shadow: 2px 2px 5px #00ff33a3;
+}
+
+#bootstrap-override #toast-id {
+       background-color: white;
+       right: 4vw;
+       top: 10vh;
+       z-index: 100;
+       position: fixed;
+}
+
+#btn a {
+       text-decoration: none;
+}
+
+.find_v {
+       display: flex;
+       justify-content: space-between;
+       padding: 24px 24px 0px;
+}
+
+.fv_btn {
+       padding-top: 15px;
+}
+
+#explr {
+       margin: 0px 4vw 25px;
+}
+
+.card-info {
+       display: flex;
+}
+
+.card-info-icon-category {
+       height: 13px;
+       width: 13px;
+       margin-top: 6px;
+}
+
+.card-info-icon {
+       height: 16px;
+       width: 16px;
+       margin-top: 6px;
+}
+
+.card-info>p {
+       margin-left: 0.5rem;
+}
+
+.ngo-explore-dsk,
+.ngo-explore-mob {
+       padding-top: 3vh;
+}
+
+.ngo-explore-dsk>img {
+       height: 70vh;
+}
+
+.ngo-explore-mob {
+       display: none;
+}
+
+.explr-txt {
+       position: absolute;
+       left: 23%;
+       margin-top: 15%;
+       color: whitesmoke;
+       text-shadow: 0px 0px 5px var(--logo-clr);
+       font-family: "Agbalumo", system-ui;
+}
+
+.explr-txt>span {
+       color: #ffdd59;
+       font-size: 2.5rem;
+}
+
+#bootstrap-override .index-explr-btn {
+       position: absolute;
+       left: 45%;
+       margin-top: 21%;
+       background: var(--bs-warning-border-subtle);
+       color: var(--logo-clr);
+       box-shadow: 1px 1px 5px black;
+       font-weight: 600;
+}
+
+#bootstrap-override .index-explr-btn:hover {
+       background: #ffca2e;
+}
+
+.wrapper {
+       padding: 4vh 0px 4vh 0px;
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       background-color: #5700261c;
+}
+
+.counter-container {
+       width: 28vmin;
+       height: 28vmin;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       padding: 1em 0;
+       position: relative;
+       font-size: 16px;
+       background: whitesmoke;
+       border-radius: 0.5em;
+       border: 2px solid #57002691;
+       border-bottom: 10px solid #57002691;
+}
+
+.counter-container>i {
+       text-shadow: 0px 0px 3px var(--logo-clr);
+       /* color: #18f98f; */
+       font-size: 2.5em;
+       text-align: center;
+}
+
+span.num {
+       color: black;
+       display: grid;
+       place-items: center;
+       font-weight: 600;
+       font-size: 3em;
+}
+
+span.text {
+       color: black;
+       font-size: 1em;
+       text-align: center;
+       pad: 0.7em 0;
+       font-weight: 500;
+       line-height: 0;
+}
+
+.blog-heading {
+       margin: 10vh 0vw 4vh;
+       display: flex;
+       justify-content: center;
+}
+
+span.b-heading-txt {
+       color: var(--logo-clr);
+       font-weight: 600;
+}
+
+.b-allbtn-div {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 32px;
+}
+
+#bootstrap-override .b-allbtn {
+       color: black;
+       border-color: black;
+       border-radius: 3px;
+}
+
+#bootstrap-override .b-allbtn:hover {
+       background-color: antiquewhite;
+}
+
+@media screen and (max-width:359px) {
+       .explr-txt {
+              left: 6%;
+       }
+
+       #bootstrap-override .index-explr-btn {
+              left: 28%;
+              margin-top: 70%;
+       }
+
+       .fv_btn {
+              margin-left: 15px;
+       }
+}
+
+@media screen and (min-width:360px) and (max-width: 767px) {
+       .find_v {
+              display: block;
+       }
+
+       .ngo-explore-mob {
+              display: block;
+       }
+
+       .ngo-explore-mob>img {
+              height: 60vh;
+       }
+
+       .ngo-explore-dsk {
+              display: none;
+       }
+
+       .explr-txt {
+              left: 17%;
+              right: 18%;
+       }
+
+       #bootstrap-override .index-explr-btn {
+              left: 35%;
+              margin-top: 65%;
+       }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+       .explr-txt {
+              left: 15%;
+              right: 9%;
+              margin-top: 22%;
+       }
+
+       #bootstrap-override .index-explr-btn {
+              left: 40%;
+              margin-top: 35%;
+       }
+}
+
+@media screen and (max-width: 1024px) {
+       .wrapper {
+              width: 85vw;
+       }
+
+       .counter-container {
+              height: 26vmin;
+              width: 26vmin;
+              font-size: 12px;
+       }
+}
+
+@media screen and (max-width: 768px) {
+       .wrapper {
+              width: 90vw;
+              flex-wrap: wrap;
+              gap: 30px;
+       }
+
+       .counter-container {
+              width: calc(50% - 40px);
+              height: 30vmin;
+              font-size: 14px;
+       }
+}
+
+@media screen and (max-width: 480px) {
+       .wrapper {
+              gap: 15px;
+       }
+
+       .counter-container {
+              width: 100%;
+              height: 25vmin;
+              font-size: 8px;
+       }
+}
