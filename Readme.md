@@ -101,4 +101,4 @@ This project is licensed under the MIT License.
 
 Contact
 
-For any inquiries or support, please contact Satya8900.
+For any inquiries or support, please contact [here](https://www.linkedin.com/in/satyanp).
