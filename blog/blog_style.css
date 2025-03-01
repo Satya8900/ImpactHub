@@ -40,11 +40,11 @@ a {
        }
 }
 
-@media(min-width:1340px) {
+/* @media(min-width:1340px) {
        .main_container {
               grid-template-columns: repeat(4, 1fr);
        }
-}
+} */
 
 .header_tittle {
        margin-bottom: 25px;
