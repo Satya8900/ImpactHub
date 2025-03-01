@@ -46,9 +46,9 @@ To set up the project locally:
 
 Ensure you have a MySQL server running.
 
-Create a database named impacthub.
+Import the provided SQL file located in the Database/ directory to set up the necessary database along with tables.
 
-Import the provided SQL file located in the Database/ directory to set up the necessary tables.
+Set max_allowed_packet=16M in your config file i.e, my.ini (Optional: If you face max_packet_size issue)
 
 
 
