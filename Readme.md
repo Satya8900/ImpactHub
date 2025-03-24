@@ -48,7 +48,7 @@ Ensure you have a MySQL server running.
 
 Import the provided SQL file located in the Database/ directory to set up the necessary database along with tables.
 
-Set max_allowed_packet=16M in your config file i.e, my.ini (Optional: If you face max_packet_size issue)
+Set max_allowed_packet=16M in your config file i.e, my.ini (Optional: Fixes max_packet_size error)
 
 
 
